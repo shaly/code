@@ -24,6 +24,7 @@ public class ThreadDemo002Extends {
 		System.out.println("创建线程已经启动 main");
 		for (int i = 0; i < 20; i++) {
 			System.out.println("main () i:"+i);
+			int a=1/0;
 			
 		}
 		
@@ -120,5 +121,35 @@ public class ThreadDemo002Extends {
 		run () i:19
 */
 		
+		
+		
+		
+		//3.注意：各个线程中互不影响，主线程报错，不影响子线程执行
+		/*创建线程开始 main
+		创建线程已经启动 main
+		main () i:0
+		run () i:0
+		run () i:1
+		run () i:2
+		run () i:3
+		run () i:4
+		run () i:5
+		run () i:6
+		run () i:7
+		run () i:8
+		run () i:9
+		run () i:10
+		run () i:11
+		Exception in thread "main" run () i:12java.lang.ArithmeticException: / by zero
+
+		run () i:13
+		run () i:14
+		run () i:15
+		run () i:16
+		run () i:17
+		run () i:18
+		run () i:19
+			at com.syf.study.ThreadDemo002Extends.main(ThreadDemo002Extends.java:27)
+*/
 	}
 }
