@@ -4,7 +4,7 @@ class ThreadGetIdGetName extends Thread{
 	@Override
 	public void run() {
 		for (int i = 0; i < 10; i++) {
-			//getId() getName()是Thread内部的方法可以直接调用（Runnable是没有这两个方法的）
+			//getId() getName()是Thread内部的方法可以直接调用（普通的类和实现Runnable的类是都没有这两个方法的）
 			//获取线程ID*****获取线程名称
 			System.out.println("getId()="+getId()+"******getName()="+getName()+"******run 5i:"+i);	
 		}
