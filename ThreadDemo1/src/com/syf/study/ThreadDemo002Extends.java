@@ -9,7 +9,7 @@ class CreateThread extends Thread{
 }
 
 /**
- * 
+ * 继承Thread类创建多线程
  * @author Administrator
  *
  */

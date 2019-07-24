@@ -10,7 +10,7 @@ class CreateThread1 implements Runnable{
 }
 
 /**
- * 
+ * 实现Runnable方法创建多线程
  * @author Administrator
  *
  */
